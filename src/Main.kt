@@ -15,9 +15,9 @@ fun sum(a: Int, b: Int){
 fun printSum(a: Int, b: Int) {
     println("The Sum of $a and $b is ${a+b}")
 }
-class Shape(val height: Double, val length: Double){
+class Shape(private val height: Double, private val length: Double){
     val perimeter = (height + length) * 2
 }
-class Square constructor(val sideOne: Double, val sideTwo: Double){
+class Square constructor(private val sideOne: Double, private val sideTwo: Double){
     val area = (sideOne * sideTwo)
 }
